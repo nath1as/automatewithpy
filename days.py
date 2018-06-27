@@ -1,11 +1,12 @@
-c = 50
-h = 30
-
 import math
-x = []
-y = [i for i in input('give me a number: ').split(',')]
 
-for d in y:
-    x.append(str(int(round(math.sqrt(2*c*float(d)/h)))))
+C = 50
+H = 30
 
-print(','.join(x))
+X = []
+Y = [i for i in input('give me a number: ').split(',')]
+
+for d in Y:
+    X.append(str(int(round(math.sqrt(2*C*float(d)/H)))))
+
+print(','.join(X))

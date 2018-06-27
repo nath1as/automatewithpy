@@ -1,7 +1,7 @@
 #!/usr/bin/python3.6m
 
-import pyperclip
 import re
+import pyperclip
 
 phoneRegex = re.compile(r'''(
     (\d{3}|\(\d{3}\))?                # area code
@@ -34,7 +34,7 @@ for groups in emailRegex.findall(text):
     matches.append(groups[0])
 
 # Copy the results to the clipboard
-if len(matches) > 0:
+if matches:
     pyperclip.copy('\n'.join(matches))
     print('Copied to clipboard:')
     print('\n'.join(matches))
